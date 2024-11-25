@@ -1,0 +1,17 @@
+GET http://localhost:5273/api/categoria/listar
+GET http://localhost:5273/api/tarefas/listar
+POST http://localhost:5273/api/categoria/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Filmes"
+    
+}
+
+POST http://localhost:5273/api/tarefas/cadastrar
+Content-Type: application/json
+
+{
+    "descricao": "Tarefa Exemplo",
+    "categoriaId": 1
+}
